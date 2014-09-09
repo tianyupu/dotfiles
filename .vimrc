@@ -10,6 +10,9 @@ set number
 " Set vim to be clickable (for convenience)
 set mouse=a
 
+" Set automatic folding when file is opened
+set foldmethod=indent
+
 " Set search highlighting
 set hlsearch
 " Set ignore case when searching

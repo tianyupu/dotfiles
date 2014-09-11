@@ -13,7 +13,7 @@ Config { font = "xft:Monospace:size=9:bold:antialias=true"
                     -- some batteries may need the extra plugin argument "-c energy_full" to get the status working corrrectly
                     , Run BatteryP ["BAT1"]
                             ["-t", "Batt: <left>% (<timeleft>), <acstatus>", "-L", "20", "-H", "75", "-h", "#05b615", "-n", "#b58900", "-l", "#dc322f",
-                            "--", "-O", "Plugged in", "-o", "", "-f", "AC/online"] 60
+                            "--", "-O", "Plugged in", "-o", "Discharging", "-f", "AC/online"] 60
                     , Run StdinReader
                     ]
        , template = "%StdinReader% }{ %wlan0% | %cpu% | %memory% | %battery%   <fc=#b58900>%date%</fc>"

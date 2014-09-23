@@ -41,6 +41,7 @@ startup = do
         spawn "$HOME/.dropbox-dist/dropboxd"
         spawn "xscreensaver -no-splash"
         spawn "xrdb -merge $HOME/.Xresources"
+        spawn "eval $(cat $HOME/.fehbg)"
         spawn "xterm"
 
 sudoSpawn command = withPrompt "Password" $ run command

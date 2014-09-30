@@ -1,6 +1,9 @@
 " Set utf8 as encoding
 set encoding=utf8
 
+" Rolodex Vim
+set noequalalways winminheight=0 winheight=9999 helpheight=9999
+
 " Set to auto read when a file has been changed externally
 set autoread
 

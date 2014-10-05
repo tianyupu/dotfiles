@@ -11,8 +11,7 @@ Config { font = "xft:Monospace:size=9:bold:antialias=true"
                     , Run Memory ["-t","Mem: <usedratio>%","-L", "35","-H","80","-l","#05b615","-h","#dc322f","-n","#b58900"] 10
                     , Run Swap [] 10
                     , Run Date "%a, %b %_d %H:%M" "date" 10
-                    , Run ThermalZone 0 [] 10
                     , Run StdinReader
                     ]
-       , template = "%StdinReader% }{ %eth0% | %multicpu% | %memory% | %swap% | %thermal0%  <fc=#b58900>%date%</fc>"
+       , template = "%StdinReader% }{ %eth0% | %multicpu% | %memory% | %swap%   <fc=#b58900>%date%</fc>"
        }

@@ -1,0 +1,18 @@
+Config { font = "xft:Monospace:size=9:bold:antialias=true"
+       , bgColor = "#002b36"
+       , fgColor = "#93a1a1"
+       , position = TopW C 100
+       , sepChar = "%"
+       , alignSep = "}{"
+
+       , commands = [ Run Cpu ["-t", "CPU: <total>%", "-L","0","-H","50","--normal","#05b615","--high","#dc322f"] 10
+                    , Run MultiCpu ["-t", "CPU: <total0>%/<total1>%", "-L", "0", "-H", "50", "--normal", "#05b615", "--high", "#dc322f"] 10
+                    , Run Network "eth0" ["-t", "eth0: <tx>/<rx>", "-L", "0", "-H", "70", "-l", "#dc322f", "-n", "#b58900", "-h", "#05b615"] 10
+                    , Run Memory ["-t","Mem: <usedratio>%","-L", "35","-H","80","-l","#05b615","-h","#dc322f","-n","#b58900"] 10
+                    , Run Swap [] 10
+                    , Run Date "%a, %b %_d %H:%M" "date" 10
+                    , Run ThermalZone 0 [] 10
+                    , Run StdinReader
+                    ]
+       , template = "%StdinReader% }{ %eth0% | %multicpu% | %memory% | %swap% | %thermal0%  <fc=#b58900>%date%</fc>"
+       }

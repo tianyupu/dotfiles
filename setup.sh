@@ -6,6 +6,6 @@
 sudo apt-get update
 sudo apt-get install -y \
   redshift \
-  xmonad xmobar \
+  xmonad xmobar suckless-tools \
   vim \
   thunar xscreensaver scrot feh amixer xbacklight

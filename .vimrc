@@ -2,7 +2,7 @@
 set encoding=utf8
 
 " Rolodex Vim
-set noequalalways winminheight=0 winheight=9999 helpheight=9999
+"set noequalalways winminheight=0 winheight=9999 helpheight=9999
 
 " Set to auto read when a file has been changed externally
 set autoread
@@ -43,8 +43,10 @@ set ruler
 
 " Always show the status line
 set laststatus=2
+set showtabline=2
+set noshowmode
 " Format the status line
-set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l/%L\ \ \ Col:\ %c
+"set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l/%L\ \ \ Col:\ %c
 
 " For 'proper' copying and pasting!
 set clipboard=unnamedplus
@@ -53,6 +55,10 @@ set clipboard=unnamedplus
 syntax enable
 " ANTLR syntax highlighting
 au BufRead,BufNewFile *.g set syntax=antlr3
+
+" Solarized
+set background=dark
+colorscheme solarized
 
 " Helper functions
 function! VisualSelection(direction) range
@@ -83,3 +89,8 @@ function! HasPaste()
     en
     return ''
 endfunction
+
+" Powerline
+python from powerline.vim import setup as powerline_setup
+python powerline_setup()
+python del powerline_setup

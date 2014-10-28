@@ -1,4 +1,4 @@
-Config { font = "xft:Monospace:size=9:bold:antialias=true"
+Config { font = "xft:Inconsolata for Powerline:size=9:bold:antialias=true"
        , bgColor = "#002b36"
        , fgColor = "#93a1a1"
        , position = TopW C 100

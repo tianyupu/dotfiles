@@ -1,22 +1,25 @@
 ! Use a nice font and size by default
-xterm*faceName: Ubuntu Mono
-xterm*faceSize: 14
+xterm*faceName: Inconsolata for Powerline
+xterm*faceSize: 12
 
 ! Every shell is a login shell by default
 xterm*loginshell: true
 
+! Set terminal name
+xterm*termName: xterm-256color
+
 ! Scrollback
 xterm*savelines: 16384
-
-! RHS scrollbar
-xterm*rightScrollBar: true
-xterm*ScrollBar: true
 
 ! Stop output to terminal from jumping down to bottom of scroll
 xterm*scrollTtyOutput: false
 
+! No scrollbars
+xterm*scrollBar: false
+
 ! Use UTF-8 by default
 xterm*locale: true
+xterm*utf8: 1
 
 ! Use the Alt key for keyboard shortcuts
 xterm*metaSendsEscape: true

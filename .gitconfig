@@ -7,11 +7,12 @@
 [color]
   ui = true
 [alias]
+  ap = add -p
   st = status
   co = checkout
   cob = checkout -b
   br = branch
-  ci = commit
+  cm = commit
   po = push origin
   plo = pull origin
   df = diff

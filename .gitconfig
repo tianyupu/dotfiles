@@ -6,3 +6,14 @@
   autocrlf = input
 [color]
   ui = true
+[alias]
+  st = status
+  co = checkout
+  cob = checkout -b
+  br = branch
+  ci = commit
+  po = push origin
+  plo = pull origin
+  df = diff
+  dfc = diff --cached
+  lg = log --pretty="%C(yellow)%h%C(bold\\ red)%<|(35,trunc)%d\\ %C(reset)%<|(100,trunc)%s\\ %C(blue)[%cn,\\ %cr]"

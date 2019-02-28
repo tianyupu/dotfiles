@@ -14,7 +14,8 @@
   br = branch
   cm = commit
   po = push origin
-  plo = pull origin
+  pl = pull
   df = diff
   dfc = diff --cached
   lg = log --pretty="%C(yellow)%h%C(bold\\ red)%<|(35,trunc)%d\\ %C(reset)%<|(100,trunc)%s\\ %C(blue)[%cn,\\ %cr]"
+  ft = fetch

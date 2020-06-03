@@ -13,7 +13,10 @@
   cob = checkout -b
   br = branch
   cm = commit
+  cma = commit --amend
   po = push origin
+  pn = push -u origin HEAD
+  pf = push --force
   pl = pull
   df = diff
   dfc = diff --cached

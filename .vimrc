@@ -7,8 +7,8 @@ set encoding=utf8
 " Set to auto read when a file has been changed externally
 set autoread
 
-" Set line numbering
-set number
+" Set relative line numbering
+set rnu
 
 " Set vim to be clickable (for convenience)
 set mouse=a
